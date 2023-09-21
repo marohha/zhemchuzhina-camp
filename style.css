@@ -384,7 +384,7 @@ h3 {
     height: 30px;
     position: absolute;
     right: 40px;
-    top: 20px;
+    top: 10px;
     z-index: 2;
     margin-right: 20px;
   }
@@ -413,7 +413,7 @@ h3 {
   .title {
     width: 100%;
     right: 15px;
-    top: 450px; 
+    top: 490px; 
   }
   .title-h1 {
     font-size: 60px;
