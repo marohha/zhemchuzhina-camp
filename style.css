@@ -413,10 +413,10 @@ h3 {
   .title {
     width: 100%;
     right: 15px;
-    top: 500px; 
+    top: 450px; 
   }
   .title-h1 {
-    font-size: 70px;
+    font-size: 60px;
   }
 
   .title-camp {
@@ -458,6 +458,12 @@ h3 {
 
   .header-content {
     padding: 0 20px;
+    height: 80px;
+  }
+
+  .logo-header {
+    width: 70px;
+    border-radius: 50%;
   }
 
   .footer {
