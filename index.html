@@ -6,8 +6,42 @@
     <title>Дол Жемчужина</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="img/favicon.ico">
+    <script>
+        function openPopup() {
+            var popup = document.querySelector('.popup');
+            popup.style.display = 'block';
+        }
+        function closePopup() {
+            var popup = document.querySelector('.popup');
+            popup.style.display = 'none';
+        }
+    </script>
 </head>
 <body>
+    <div class="popup">
+        <h3 class="popup-header">Заказать обратный звонок</h3>
+        <div class="popup-content">
+            <label class="select-header" for="tel-form">Укажите Ваш номер телефона:</label>
+            <input class="form-tel" type="tel" id="tel-form" placeholder="+7 (000) 000 00 00">
+            <label class="select-header" for="select">Ранее бывали в нашем лагере?</label>
+            <div class="radio-buttons">
+                <label class="radio-answer">
+                    <input class="radio" type="radio" name="yes/no" checked>
+                    <span class="radio-text">Да</span>
+                </label>
+                <label class="radio-answer">
+                    <input class="radio" type="radio" name="yes/no">
+                    <span class="radio-text">Нет</span>
+                </label>
+            </div>
+            <label class="select-header" for="text-form">Ваш вопрос:</label>
+            <input class="form-text" type="text" id="text-form" placeholder="Уточнить информацию по путевке">  
+        </div>
+        <div class="popup-button-box">
+            <button class="popup-button" type="submit">Отправить</button>
+            <button class="popup-button" onclick="closePopup()">Закрыть</button>
+        </div>
+    </div>
     <header class="header">
         <div class="header-content">
                 <a href="#"><img src="img/dUU-58lvUzk.jpg" class="logo-header" alt="Logo Marohha"></a>
@@ -41,7 +75,8 @@
                     </ul>
                 </div>   
                 <div class="button-box">
-                    <button class="main-button">Заказать звонок</button>
+                    <button class="main-button" onclick="openPopup()">Заказть звонок</button>
+                    
                 </div>  
         </div>
         <div class="offer">
