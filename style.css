@@ -120,6 +120,42 @@ h3 {
   line-height: 0px;
 }
 
+.reward-main {
+  width: 40%;
+  height: 150px;
+  position: absolute;
+  bottom: 80px;
+  left: 110px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(auto-fill);
+  gap: 10px;
+}
+
+.reward-card {
+  width: 100%;
+  background-color: #fff;
+  border-radius: 10%;
+}
+
+.reward-card-image {
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  background-image: url("img/mosgortur.jpg");
+  background-position: center;
+  background-size: cover;
+  border-radius: 10%;
+}
+
+.reward-card-header {
+  font-family: sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  color: #000;
+  text-align: center;
+}
+
+
 .services {
   width: 100%;
   height: 700px;
@@ -345,6 +381,30 @@ h3 {
   margin: 10px auto 10px;
 }
 
+.contacts-main {
+  width: 100%;
+  height: 600px;
+  background: linear-gradient(to top, #75c1ff, #fff);
+}
+
+.contacts-header {
+  font-family: sans-serif;
+  font-size: 27px;
+  color: #000;
+  text-transform: uppercase;
+  margin: 40px auto 0;
+  text-align: center;
+}
+
+.contacts-header::after {
+  content: "";
+  display: block;
+  width: 220px;
+  height: 4px;
+  background-color: #ff3333;
+  margin: 10px auto 10px;
+}
+
 .footer-box {
   display: flex;
   align-items: center;
@@ -376,7 +436,7 @@ h3 {
   }
 
   .menu-burger {
-    display: flex;
+    display: none;
   }
 
   .menu-burger {
@@ -402,7 +462,7 @@ h3 {
   }
 
   .main-button {
-    display: none;
+    /* display: none; */
   }
 
   .offer {
@@ -413,7 +473,7 @@ h3 {
   .title {
     width: 100%;
     right: 15px;
-    top: 490px; 
+    top: 480px; 
   }
   .title-h1 {
     font-size: 60px;
@@ -425,6 +485,10 @@ h3 {
 
   .services {
     height: 100%;
+  }
+
+  .reward-main {
+    display: none;
   }
 
   .service-cards {
@@ -458,11 +522,11 @@ h3 {
 
   .header-content {
     padding: 0 20px;
-    height: 80px;
+    height: 70px;
   }
 
   .logo-header {
-    width: 70px;
+    width: 60px;
     border-radius: 50%;
   }
 
