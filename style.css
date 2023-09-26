@@ -16,7 +16,7 @@ h3 {
 
 .popup {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -477,7 +477,7 @@ h3 {
 
 .camp-season {
   width: 100%;
-  height: 600px;
+  height: 100%;
   background: linear-gradient(to top, #75c1ff, #fff);
 }
 
@@ -486,7 +486,7 @@ h3 {
   font-size: 27px;
   color: #000;
   text-transform: uppercase;
-  margin: 40px auto 0;
+  margin: 40px auto 40px;
   text-align: center;
 }
 
@@ -497,6 +497,22 @@ h3 {
   height: 4px;
   background-color: #ff3333;
   margin: 10px auto 10px;
+}
+
+.season-image1 {
+  background-image: url("img/season1.jpeg");
+}
+
+.season-image2 {
+  background-image: url("img/season2.jpeg");
+}
+
+.season-image3 {
+  background-image: url("img/season3.webp");
+}
+
+.season-image4 {
+  background-image: url("img/season4.jpg");
 }
 
 .contacts-main {
