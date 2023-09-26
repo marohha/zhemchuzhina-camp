@@ -15,6 +15,24 @@
             var popup = document.querySelector('.popup');
             popup.style.display = 'none';
         }
+
+        function openMoreSwim() {
+            let moreSwim = document.querySelector('.moreSwim');
+            moreSwim.style.display = 'block';
+        }
+        function closeMoreSwim() {
+            let moreSwim = document.querySelector('.moreSwim');
+            moreSwim.style.display = 'none';
+        }
+
+        function openMoreTerritoria() {
+            let moreSwim = document.querySelector('.moreTerritoria');
+            moreSwim.style.display = 'block';
+        }
+        function closeMoreTerritoria() {
+            let moreSwim = document.querySelector('.moreTerritoria');
+            moreSwim.style.display = 'none';
+        }
     </script>
 </head>
 <body>
@@ -131,6 +149,22 @@
             </div>
             <div class="service-cards">
                 <div class="service-card">
+                    <div class="moreSwim">
+                        <div class="card-header">
+                            <p>Собственный плаж</p>
+                        </div>
+                        <div class="card-text">
+                            <p>Широкая береговая зона с песочным плажем, шезлонгами и навесами. Квалифицированные спасатели и медики.</p>
+                            <p>Широкая береговая зона с песочным плажем, шезлонгами и навесами. Квалифицированные спасатели и медики.</p>
+                            <p>Широкая береговая зона с песочным плажем, шезлонгами и навесами. Квалифицированные спасатели и медики.</p>
+                            <p>Широкая береговая зона с песочным плажем, шезлонгами и навесами. Квалифицированные спасатели и медики.</p>
+                            <p>Широкая береговая зона с песочным плажем, шезлонгами и навесами. Квалифицированные спасатели и медики.</p>
+                            <p>Широкая береговая зона с песочным плажем, шезлонгами и навесами. Квалифицированные спасатели и медики.</p>
+                        </div>
+                        <div class="card-button-box">
+                            <button class="card-button" onclick="closeMoreSwim()">Закрыть</button>
+                        </div>
+                    </div>
                     <div class="card-image card-image1">
 
                     </div>
@@ -141,10 +175,26 @@
                         <p>Широкая береговая зона с песочным плажем, шезлонгами и навесами. Квалифицированные спасатели и медики.</p>
                     </div>
                     <div class="card-button-box">
-                        <button class="card-button">Подробнее</button>
+                        <button class="card-button" onclick="openMoreSwim()">Подробнее</button>
                     </div>
                 </div>
                 <div class="service-card">
+                    <div class="moreTerritoria">
+                        <div class="card-header">
+                            <p>Территория 4,5 га</p>
+                        </div>
+                        <div class="card-text">
+                            <p>Закрытая охраняемая территория с широкими аллеями, усаженными зеленью и цветами.</p>
+                            <p>Закрытая охраняемая территория с широкими аллеями, усаженными зеленью и цветами.</p>
+                            <p>Закрытая охраняемая территория с широкими аллеями, усаженными зеленью и цветами.</p>
+                            <p>Закрытая охраняемая территория с широкими аллеями, усаженными зеленью и цветами.</p>
+                            <p>Закрытая охраняемая территория с широкими аллеями, усаженными зеленью и цветами.</p>
+                            <p>Закрытая охраняемая территория с широкими аллеями, усаженными зеленью и цветами.</p>
+                        </div>
+                        <div class="card-button-box">
+                            <button class="card-button" onclick="closeMoreTerritoria()">Закрыть</button>
+                        </div>
+                    </div>
                     <div class="card-image card-image2">
 
                     </div>
@@ -155,7 +205,7 @@
                         <p>Закрытая охраняемая территория с широкими аллеями, усаженными зеленью и цветами.</p>
                     </div>
                     <div class="card-button-box">
-                        <button class="card-button">Подробнее</button>
+                        <button class="card-button" onclick="openMoreTerritoria()">Подробнее</button>
                     </div>
                 </div>
                 <div class="service-card">
@@ -169,7 +219,7 @@
                         <p>Современные спортивные площадки расчитаны для проведения ежедневных различных спортивных мероприятий.</p>
                     </div>
                     <div class="card-button-box">
-                        <button class="card-button">Подробнее</button>
+                        <button class="card-button" onclick="openMoreTerritoria()">Подробнее</button>
                     </div>
                 </div>
                 <div class="service-card">
@@ -183,7 +233,7 @@
                         <p>В нашей столовой организовано питание 5 раз в день в соответствии со всеми требованиями СанПин.</p>
                     </div>
                     <div class="card-button-box">
-                        <button class="card-button">Подробнее</button>
+                        <button class="card-button" onclick="openMoreTerritoria()">Подробнее</button>
                     </div>
                 </div>
             </div>
