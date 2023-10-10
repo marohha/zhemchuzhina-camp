@@ -33,7 +33,7 @@ h3 {
 
 .popup-header {
   margin-top: 10px;
-  font-family: sans-serif;
+  font-family: serif;
   font-size: 20px;
   color: #000;
   text-transform: uppercase;
@@ -58,7 +58,7 @@ h3 {
 .select-header {
   margin-top: 20px;
   margin-bottom: 20px;
-  font-family: sans-serif;
+  font-family: serif;
   font-size: 15px;
   color: #000;
   text-transform: uppercase;
@@ -71,7 +71,7 @@ h3 {
   border: 2px solid #75c1ff;
   background-color: #f4f7f6;
   padding: 10px;
-  font-family: open-sans;
+  font-family: serif;
   font-weight: 400;
   font-style: regular;
   font-size: 17px;
@@ -86,7 +86,7 @@ h3 {
   border: 2px solid #75c1ff;
   background-color: #f4f7f6;
   padding: 10px;
-  font-family: open-sans;
+  font-family: serif;
   font-weight: 400;
   font-style: regular;
   font-size: 17px;
@@ -115,7 +115,7 @@ h3 {
   border-radius: 50%;
   background-color: #75c1ff;
   color: #fff;
-  font-family: sans-serif;
+  font-family: serif;
   font-size: 12px;
   text-transform: uppercase;
   cursor: pointer;
@@ -171,7 +171,7 @@ h3 {
   text-decoration: none;
   color: #fff;
   font-family: serif;
-  font-size: 22px;
+  font-size: 20px;
   text-transform: uppercase;
 }
 
@@ -180,13 +180,13 @@ h3 {
 }
 
 .main-button {
-  width: 150px;
-  height: 50px;
+  width: 160px;
+  height: 55px;
   border: 0;
   border-radius: 50%;
   background-color: #fff;
   color: #1e90ff;
-  font-family: sans-serif;
+  font-family: serif;
   font-size: 15px;
   text-transform: uppercase;
   cursor: pointer;
@@ -221,7 +221,7 @@ h3 {
 
 .title-camp {
   font-size: 40px;
-  font-family: Arial, sans-serif;
+  font-family: serif;
   font-weight: 400;
   color: #fff;
   line-height: 0px;
@@ -233,7 +233,7 @@ h3 {
 
 .title-h1 {
   font-size: 110px;
-  font-family: Arial, sans-serif;
+  font-family: serif;
   font-weight: 500;
   color: #fff;
   line-height: 0px;
@@ -241,7 +241,7 @@ h3 {
 }
 
 .reward-main {
-  width: 30%;
+  width: 35%;
   height: 100px;
   position: absolute;
   bottom: 80px;
@@ -268,7 +268,7 @@ h3 {
 }
 
 .reward-card-header {
-  font-family: sans-serif;
+  font-family: serif;
   font-size: 15px;
   font-weight: 500;
   color: #000;
@@ -290,7 +290,7 @@ h3 {
 }
 
 .services-header {
-  font-family: sans-serif;
+  font-family: serif;
   font-size: 35px;
   color: #000;
   text-transform: uppercase;
@@ -383,7 +383,7 @@ h3 {
 }
 
 .card-header {
-  font-family: sans-serif;
+  font-family: serif;
   font-size: 18px;
   font-weight: 500;
   color: #000;
@@ -393,7 +393,7 @@ h3 {
 }
 
 .card-text {
-  font-family: sans-serif;
+  font-family: serif;
   font-size: 15px;
   font-weight: 300;
   color: #000;
@@ -406,7 +406,7 @@ h3 {
   border-radius: 50%;
   background-color: #75c1ff;
   color: #fff;
-  font-family: sans-serif;
+  font-family: serif;
   font-size: 15px;
   text-transform: uppercase;
   cursor: pointer;
@@ -463,7 +463,7 @@ h3 {
 }
 
 .event-header {
-  font-family: sans-serif;
+  font-family: serif;
   font-size: 27px;
   color: #000;
   text-transform: uppercase;
@@ -481,7 +481,7 @@ h3 {
 }
 
 .event-text {
-  font-family: sans-serif;
+  font-family: serif;
   font-size: 15px;
   text-align: center;
 } 
@@ -493,7 +493,7 @@ h3 {
   border-radius: 30%;
   background-color: #75c1ff;
   color: #fff;
-  font-family: sans-serif;
+  font-family: serif;
   font-size: 15px;
   text-transform: uppercase;
   cursor: pointer;
@@ -515,10 +515,11 @@ h3 {
   width: 100%;
   height: 100%;
   background: linear-gradient(to top, #75c1ff, #fff);
+  padding-bottom: 100px;
 }
 
 .camp-season-header {
-  font-family: sans-serif;
+  font-family: serif;
   font-size: 27px;
   color: #000;
   text-transform: uppercase;
@@ -566,7 +567,7 @@ h3 {
 
 .contacts-text {
   font-size: 25px;
-  font-family: sans-serif;
+  font-family: serif;
   font-weight: 500;
   color: #000;
   line-height: 40px;
@@ -574,7 +575,7 @@ h3 {
 }
 
 .contacts-header {
-  font-family: sans-serif;
+  font-family: serif;
   font-size: 27px;
   color: #000;
   text-transform: uppercase;
@@ -614,7 +615,7 @@ h3 {
   padding-right: 100px;
   box-sizing: border-box;
   color: #fff;
-  font-family: sans-serif;
+  font-family: serif;
   font-size: 18px;
 }
 
@@ -671,14 +672,14 @@ h3 {
   .title {
     width: 100%;
     right: 15px;
-    top: 480px; 
+    top: 465px; 
   }
   .title-h1 {
-    font-size: 60px;
+    font-size: 50px;
   }
 
   .title-camp {
-    font-size: 40px;
+    font-size: 22px;
   }
 
   .services {
@@ -781,7 +782,7 @@ h3 {
     text-decoration: none;
     font-size: 13px;
     color: #fff;
-    font-family: sans-serif;
+    font-family: serif;
     font-weight: 400;
     font-style: bold;
     text-transform: uppercase;
@@ -898,7 +899,7 @@ h3 {
   }
 
   .reward-card-header {
-    font-family: sans-serif;
+    font-family: serif;
     font-size: 11px;
     font-weight: 300;
   }
@@ -966,7 +967,7 @@ h3 {
     text-decoration: none;
     font-size: 13px;
     color: #fff;
-    font-family: sans-serif;
+    font-family: serif;
     font-weight: 400;
     font-style: bold;
     text-transform: uppercase;
