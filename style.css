@@ -110,22 +110,41 @@ h3 {
 
 .popup-button {
   width: 120px;
-  height: 40px;
+  height: 60px;
   border: 0;
-  border-radius: 50%;
+  background: none;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  /* border-radius: 50%;
   background-color: #75c1ff;
   color: #fff;
   font-family: serif;
   font-size: 12px;
-  text-transform: uppercase;
+  text-transform: uppercase; */
   cursor: pointer;
-  
 }
 
-.popup-button:hover {
+.popup-button-push {
+  background-image: url("img/отправить.png");
+}
+
+.popup-button-push:hover {
+  background-image: url("img/отправитьь\ ховер.png");
+}
+
+.popup-button-close {
+  background-image: url("img/закрыть.png");
+}
+
+.popup-button-close:hover {
+  background-image: url("img/закрыть\ ховер.png");
+}
+
+/* .popup-button:hover {
   background-color: #ff3333;
   color: #fff;
-}
+} */
 
 
 .menu-mobile {
@@ -180,20 +199,26 @@ h3 {
 
 .main-button {
   width: 160px;
-  height: 55px;
+  height: 100px;
   border: 0;
-  border-radius: 50%;
+  /* border-radius: 50%;
   background-color: #fff;
   color: #1e90ff;
   font-family: serif;
   font-size: 13px;
-  text-transform: uppercase;
+  text-transform: uppercase; */
+  background: none;
+  background-image: url("img/Дизайн\ без\ названия\ \(11\).png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   cursor: pointer;
 }
 
 .main-button:hover {
-  background-color: #ff3333;
-  color: #fff;
+  /* background-color: #ff3333;
+  color: #fff; */
+  background-image: url("img/Дизайн\ без\ названия\ \(9\).png");
 }
 
 .offer {
@@ -207,11 +232,11 @@ h3 {
 }
 
 .title {
-  width: 600px;
+  width: 60%;
   height: 100%;
   position: absolute;
-  top: -100px;
-  right: 10px;
+  top: 20px;
+  right: 0;
   /* background-image: url("img/logo.png");
   background-size: cover;
   background-repeat: no-repeat;
@@ -220,7 +245,7 @@ h3 {
 }
 
 .titleImage {
-  width: 600px;
+  width: 100%;
 }
 
 .title-camp-box {
@@ -252,7 +277,7 @@ h3 {
   width: 35%;
   height: 100px;
   position: absolute;
-  bottom: 120px;
+  bottom: 170px;
   left: 110px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -283,6 +308,19 @@ h3 {
   text-align: center;
 }
 
+.wave-main {
+  position: absolute;
+  background-image: url("img/волна2.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 150px;
+  bottom: -20px;
+  left: 0;
+  right: 0;
+}
+
 
 .services {
   width: 100%;
@@ -294,24 +332,31 @@ h3 {
 }
 
 .our-services {
-  padding-top: 40px;
+  margin-top: 0;
 }
 
 .services-header {
-  font-family: serif;
+  /* font-family: serif;
   font-size: 35px;
   color: #000;
-  text-transform: uppercase;
+  text-transform: uppercase; */
+  width: 200px;
+  height: 170px;
+  margin: 0 auto;
+  background-image: url("img/о\ лагере.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.services-header::after {
+/* .services-header::after {
   content: "";
   display: block;
   width: 220px;
   height: 4px;
   background-color: #ff3333;
   margin: 10px auto 40px;
-}
+} */
 
 .service-cards {
   width: 80%;
@@ -452,15 +497,20 @@ h3 {
 }
 
 .card-button {
-  width: 160px;
-  height: 40px;
+  width: 150px;
+  height: 70px;
   border: 0;
-  border-radius: 50%;
+  /* border-radius: 50%;
   background-color: #75c1ff;
   color: #fff;
   font-family: serif;
   font-size: 15px;
-  text-transform: uppercase;
+  text-transform: uppercase; */
+  background: none;
+  background-image: url("img/Дизайн\ без\ названия\ \(6\).png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
   cursor: pointer;
   position: absolute;
   bottom: 15px;
@@ -471,9 +521,18 @@ h3 {
   text-align: center;
 }
 
+.card-button-close {
+  background-image: url("img/закрыть.png");
+}
+
 .card-button:hover {
-  background-color: #ff3333;
-  color: #fff;
+  /* background-color: #ff3333;
+  color: #fff; */
+  background-image: url("img/Дизайн\ без\ названия\ \(5\).png");
+}
+
+.card-button-close:hover {
+  background-image: url("img/закрыть\ ховер.png");
 }
 
 .events {
@@ -515,22 +574,29 @@ h3 {
 }
 
 .event-header {
-  font-family: serif;
+  /* font-family: serif;
   font-size: 27px;
   color: #000;
   text-transform: uppercase;
   margin: 0 auto;
-  text-align: center;
+  text-align: center; */
+  background-image: url("img/Ежедневные\ мероприяия.png");
+  width: 200px;
+  height: 170px;
+  margin: 0 auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.event-header::after {
+/* .event-header::after {
   content: "";
   display: block;
   width: 220px;
   height: 4px;
   background-color: #ff3333;
   margin: 10px auto 10px;
-}
+} */
 
 .event-text {
   font-family: serif;
@@ -539,15 +605,20 @@ h3 {
 } 
 
 .event-button {
-  width: 250px;
-  height: 60px;
+  width: 200px;
+  height: 120px;
   border: 0;
-  border-radius: 30%;
-  background-color: #75c1ff;
-  color: #fff;
-  font-family: serif;
+  box-sizing: border-box;
+  background: none;
+  /* border-radius: 30%; */
+  background-image: url("img/Дизайн\ без\ названия\ \(2\).png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  /* color: #fff; */
+  /* font-family: serif;
   font-size: 15px;
-  text-transform: uppercase;
+  text-transform: uppercase; */
   cursor: pointer;
   position: absolute;
   bottom: 15px;
@@ -559,8 +630,7 @@ h3 {
 }
 
 .event-button:hover {
-  background-color: #ff3333;
-  color: #fff;
+  background-image: url("img/Дизайн\ без\ названия\ \(3\).png");
 }
 
 .camp-season {
@@ -571,22 +641,29 @@ h3 {
 }
 
 .camp-season-header {
-  font-family: serif;
+  /* font-family: serif;
   font-size: 27px;
   color: #000;
   text-transform: uppercase;
   margin: 40px auto 40px;
-  text-align: center;
+  text-align: center; */
+  background-image: url("img/Смены\ в\ лагере\ 2024.png");
+  width: 200px;
+  height: 170px;
+  margin: 0 auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
-.camp-season-header::after {
+/* .camp-season-header::after {
   content: "";
   display: block;
   width: 220px;
   height: 4px;
   background-color: #ff3333;
   margin: 10px auto 10px;
-}
+} */
 
 .season-image1 {
   background-image: url("img/season1.jpeg");
@@ -626,7 +703,7 @@ h3 {
   padding: 10px;
 }
 
-.contacts-header {
+/* .contacts-header {
   font-family: serif;
   font-size: 27px;
   color: #000;
@@ -642,7 +719,7 @@ h3 {
   height: 4px;
   background-color: #ff3333;
   margin: 10px auto 10px;
-}
+} */
 
 .map-box {
   max-width: 100%;
@@ -677,8 +754,38 @@ h3 {
 
 .logo-footer {
   width: 70px;
-  border-radius: 50%;
-  margin-right: 30px;
+  /* border-radius: 50%; */
+  margin-right: 10px;
+}
+
+.camp-price-header {
+  background-image: url("img/Цены\ на\ путевки.png");
+  width: 200px;
+  height: 170px;
+  margin: 0 auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parents-header {
+  background-image: url("img/Инфо\ для\ родителей.png");
+  width: 200px;
+  height: 170px;
+  margin: 0 auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contacts-header {
+  background-image: url("img/Контакты.png");
+  width: 200px;
+  height: 170px;
+  margin: 0 auto;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media (max-width: 1250px) {
@@ -692,13 +799,13 @@ h3 {
   }
 
   .title {
-    width: 500px;
+    width: 60%;
     right: 5px;
-    top: 0; 
+    top: 10px; 
   }
 
   .titleImage {
-    width: 500px;
+    width: 100%;
   }
   .title-camp {
     font-size: 20px;
@@ -743,6 +850,8 @@ h3 {
 
   .main-button {
     /* display: none; */
+    width: 120px;
+    height: 70px;
   }
 
   .offer {
@@ -753,11 +862,11 @@ h3 {
   .title {
     width: 100%;
     right: 5px;
-    top: 0; 
+    top: 90px; 
   }
 
   .titleImage {
-    width: 320px;
+    width: 100%;
     margin: 0 auto;
   }
   .title-h1 {
@@ -931,7 +1040,7 @@ h3 {
 
 }
 
-@media (orientation: landscape) and (max-width: 900px) {
+@media (orientation: landscape) and (max-width: 640px) {
   .menu-links {
     display: none;
   }
@@ -1000,13 +1109,13 @@ h3 {
   }
 
   .title {
-    width: 300px;
+    width: 60%;
     right: 5px;
     top: 0; 
   }
 
   .titleImage {
-    width: 300px;
+    width: 100%;
   }
 
 
@@ -1191,13 +1300,13 @@ h3 {
   }
 
   .title {
-    width: 300px;
+    width: 60%;
     right: 5px;
-    top: 0; 
+    top: 20px; 
   }
 
   .titleImage {
-    width: 300px;
+    width: 100%;
   }
 
   /* .title {

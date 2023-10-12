@@ -60,8 +60,8 @@
             <input class="form-text" type="text" id="text-form" placeholder="Уточнить информацию по путевке">  
         </div>
         <div class="popup-button-box">
-            <button class="popup-button" type="submit">Отправить</button>
-            <button class="popup-button" onclick="closePopup()">Закрыть</button>
+            <button class="popup-button popup-button-push" type="submit"></button>
+            <button class="popup-button popup-button-close" onclick="closePopup()"></button>
         </div>
     </form>
     <header class="header">
@@ -97,7 +97,7 @@
                     </ul>
                 </div>   
                 <div class="button-box">
-                    <button class="main-button" onclick="openPopup()">Заказать звонок</button>
+                    <button class="main-button" onclick="openPopup()"></button>
                     
                 </div>  
         </div>
@@ -109,7 +109,7 @@
                 <div class="title-h1-box">
                     <h1 class="title-h1">Жемчужина</h1>
                 </div> -->
-                <div class="titleImage"><img class="titleImage" src="img/logo.png" alt=""></div>
+                <div class="titleImage"><img class="titleImage" src="img/Дизайн без названия - Логотип (2).png" alt=""></div>
             </div>
             <div class="reward-main">
                 <div class="reward-card">
@@ -145,12 +145,13 @@
                     </div>
                 </div> -->
             </div>
+            <div class="wave-main"></div>
         </div>
     </header>
     <main class="main-page">
        <div class="services" id="about-camp">
             <div class="our-services">
-                <h3 class="services-header">О лагере</h3>
+                <div class="services-header"></div>
             </div>
             <div class="service-cards">
                 <div class="service-card">
@@ -170,7 +171,7 @@
                             <p>----</p>
                         </div>
                         <div class="card-button-box">
-                            <button class="card-button" onclick="closeMoreSwim()">Закрыть</button>
+                            <button class="card-button  card-button-close" onclick="closeMoreSwim()"></button>
                         </div>                        
                     </div>
                     <div class="card-image card-image1">
@@ -180,10 +181,10 @@
                         <p>Собственный пляж</p>
                     </div>
                     <div class="card-text">
-                        <p>В 50 м. от корпусов проживания, собственный благоустроенный песчаный пляж, оборудован всем необходимым: теневая зона, кабинки для переодевания, спасательная станция, медицинский пункт</p>
+                        <p>В 50 м. от корпусов проживания, собственный благоустроенный песчаный пляж, оборудованый теневой зоной, кабинками для переодевания, спасательной станцией, медицинским пунктом</p>
                     </div>
                     <div class="card-button-box">
-                        <button class="card-button" onclick="openMoreSwim()">Подробнее</button>
+                        <button class="card-button" onclick="openMoreSwim()"></button>
                     </div>
                 </div>
                 <div class="service-card">
@@ -201,7 +202,7 @@
                                     Территория лагеря огорожена. Осуществляется круглосуточная охрана, ведется видеонаблюдение.</p>
                             </div>
                             <div class="card-button-box">
-                                <button class="card-button" onclick="closeMoreTerritoria()">Закрыть</button>
+                                <button class="card-button card-button-close" onclick="closeMoreTerritoria()"></button>
                             </div>
                         </div>
                     <div class="card-image card-image2">
@@ -214,7 +215,7 @@
                         <p>Закрытая охраняемая территория с широкими аллеями, усаженными зеленью и цветами с парковой зоной, столовой, детской площадкой, летней эстрадой...</p>
                     </div>
                     <div class="card-button-box">
-                        <button class="card-button" onclick="openMoreTerritoria()">Подробнее</button>
+                        <button class="card-button" onclick="openMoreTerritoria()"></button>
                     </div>
                 </div>
                 <div class="service-card">
@@ -228,7 +229,7 @@
                         <p>Современные спортивные площадки расчитаны для проведения ежедневных различных спортивных мероприятий.</p>
                     </div>
                     <div class="card-button-box">
-                        <button class="card-button" onclick="openMoreTerritoria()">Подробнее</button>
+                        <button class="card-button" onclick="openMoreTerritoria()"></button>
                     </div>
                 </div>
                 <div class="service-card">
@@ -242,7 +243,7 @@
                         <p>В нашей столовой организовано питание 5 раз в день в соответствии со всеми требованиями СанПин. В меню включены свежая выпечка, сезонные фрукты</p>
                     </div>
                     <div class="card-button-box">
-                        <button class="card-button" onclick="openMoreTerritoria()">Подробнее</button>
+                        <button class="card-button" onclick="openMoreTerritoria()"></button>
                     </div>
                 </div>
             </div>
@@ -254,7 +255,7 @@
                 </div>
                 <div class="event-description">
                     <div class="event-header">
-                        <h3>Ежедневные мероприятия</h3>
+                        <!-- <h3>Ежедневные мероприятия</h3> -->
                     </div>
                     <div class="event-text">
                         <p>Каждый день в нашем лагере проходят тематические мероприятия на различных локациях: главная сцена, кинозал, спортивная площадка и на пляже.
@@ -265,7 +266,7 @@
                         </p>
                     </div>
                     <div class="event-button-box">
-                        <button class="event-button" onclick="openMoreTerritoria()">Подробнее</button>
+                        <button class="event-button" onclick="openMoreTerritoria()"></button>
                     </div>
                 </div>
                 <div class="event-image event-image2">
@@ -275,7 +276,7 @@
        </div>
        <div class="camp-season" id="camp-season">
             <div class="camp-season-header">
-                <h3>Смены в лагере 2024г</h3>
+                <!-- <h3>Смены в лагере 2024г</h3> -->
             </div>
                 <div class="services" id="about-camp">
                     <div class="service-cards">
@@ -291,7 +292,7 @@
                                 <p>Теплая смена, купание 2 раза в день, питание 5 раз в день, спортивные мероприятия</p>
                             </div>
                             <div class="card-button-box">
-                                <button class="card-button" onclick="openMoreTerritoria()">Подробнее</button>
+                                <button class="card-button" onclick="openMoreTerritoria()"></button>
                             </div>
                         </div>
                         <div class="service-card">
@@ -306,7 +307,7 @@
                                 <p>Теплая смена, купание 2 раза в день, питание 5 раз в день, спортивные мероприятия</p>
                             </div>
                             <div class="card-button-box">
-                                <button class="card-button" onclick="openMoreTerritoria()">Подробнее</button>
+                                <button class="card-button" onclick="openMoreTerritoria()"></button>
                             </div>
                         </div>
                         <div class="service-card">
@@ -321,7 +322,7 @@
                                 <p>Теплая смена, купание 2 раза в день, питание 5 раз в день, спортивные мероприятия</p>
                             </div>
                             <div class="card-button-box">
-                                <button class="card-button" onclick="openMoreTerritoria()">Подробнее</button>
+                                <button class="card-button" onclick="openMoreTerritoria()"></button>
                             </div>
                         </div>
                         <div class="service-card">
@@ -336,7 +337,7 @@
                                 <p>Теплая смена, купание 2 раза в день, питание 5 раз в день, спортивные мероприятия</p>
                             </div>
                             <div class="card-button-box">
-                                <button class="card-button" onclick="openMoreTerritoria()">Подробнее</button>
+                                <button class="card-button" onclick="openMoreTerritoria()"></button>
                             </div>
                         </div>
                     </div>
@@ -391,7 +392,7 @@
         <div class="footer-box">
             <div class="footer-contacts">
                 <div>
-                    <a href="#"><img src="img/dUU-58lvUzk.jpg" class="logo-footer" alt="Logo Marohha"></a>
+                    <a href="#"><img src="img/logo.png" class="logo-footer" alt="Logo Marohha"></a>
                 </div>
                 <div>
                     <p>ул. Аллея Дружбы, 21, п.г.т. Заозёрное</p>
