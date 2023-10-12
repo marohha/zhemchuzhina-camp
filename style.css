@@ -150,8 +150,7 @@ h3 {
 }
 
 .logo-header {
-  width: 90px;
-  border-radius: 50%;
+  width: 170px;
 }
 
 .menu-burger {
@@ -208,11 +207,20 @@ h3 {
 }
 
 .title {
-  width: 55%;
-  height: 350px;
+  width: 600px;
+  height: 100%;
   position: absolute;
-  top: 80px;
-  right: 100px;
+  top: -100px;
+  right: 10px;
+  /* background-image: url("img/logo.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center; */
+  
+}
+
+.titleImage {
+  width: 600px;
 }
 
 .title-camp-box {
@@ -682,6 +690,16 @@ h3 {
     padding-left: 30px;
     padding-right: 30px;
   }
+
+  .title {
+    width: 500px;
+    right: 5px;
+    top: 0; 
+  }
+
+  .titleImage {
+    width: 500px;
+  }
   .title-camp {
     font-size: 20px;
   }
@@ -733,9 +751,13 @@ h3 {
   }
 
   .title {
-    width: 100%;
-    right: 15px;
-    top: 120px; 
+    width: 300px;
+    right: 5px;
+    top: 0; 
+  }
+
+  .titleImage {
+    width: 300px;
   }
   .title-h1 {
     font-size: 40px;
@@ -802,8 +824,7 @@ h3 {
   }
 
   .logo-header {
-    width: 60px;
-    border-radius: 50%;
+    width: 120px;
   }
 
   .footer {
@@ -978,10 +999,16 @@ h3 {
   }
 
   .title {
-    width: 100%;
-    right: 15px;
-    top: 50px; 
+    width: 300px;
+    right: 5px;
+    top: 0; 
   }
+
+  .titleImage {
+    width: 300px;
+  }
+
+
   .title-h1 {
     font-size: 60px;
   }
@@ -1163,10 +1190,20 @@ h3 {
   }
 
   .title {
+    width: 300px;
+    right: 5px;
+    top: 0; 
+  }
+
+  .titleImage {
+    width: 300px;
+  }
+
+  /* .title {
     width: 100%;
     right: 15px;
     top: 50px; 
-  }
+  } */
   .title-h1 {
     font-size: 60px;
   }
