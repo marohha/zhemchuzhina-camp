@@ -751,13 +751,14 @@ h3 {
   }
 
   .title {
-    width: 300px;
+    width: 100%;
     right: 5px;
     top: 0; 
   }
 
   .titleImage {
-    width: 300px;
+    width: 320px;
+    margin: 0 auto;
   }
   .title-h1 {
     font-size: 40px;
