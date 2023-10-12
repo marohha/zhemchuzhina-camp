@@ -187,7 +187,7 @@ h3 {
   background-color: #fff;
   color: #1e90ff;
   font-family: serif;
-  font-size: 15px;
+  font-size: 13px;
   text-transform: uppercase;
   cursor: pointer;
 }
@@ -244,7 +244,7 @@ h3 {
   width: 35%;
   height: 100px;
   position: absolute;
-  bottom: 80px;
+  bottom: 120px;
   left: 110px;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -306,7 +306,7 @@ h3 {
 }
 
 .service-cards {
-  width: 90%;
+  width: 80%;
   height: 500px;
   margin: 0 auto;
   display: grid;
@@ -356,6 +356,50 @@ h3 {
   z-index: 9999;
   padding: 20px;
   box-sizing: border-box;
+}
+
+.moreInfoImages {
+  width: 90%;
+  height: 40%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(auto-fill);
+  gap: 20px;
+}
+
+.moreInfoImage {
+  width: 100%;
+  height: 88%;
+  box-sizing: border-box;
+  position: relative;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.moreInfoImageSwim1 {
+  background-image: url("img/season2.jpeg");
+}
+
+.moreInfoImageSwim2 {
+  background-image: url("img/offer3.jpg");
+}
+
+.moreInfoImageSwim3 {
+  background-image: url("img/3.jpg");
+}
+
+.moreInfoImageTerritoria1 {
+  background-image: url("img/99bdaba140c914b1ff741c9096637aaf.jpg");
+}
+
+.moreInfoImageTerritoria2 {
+  background-image: url("img/4.jpg");
+}
+
+.moreInfoImageTerritoria3 {
+  background-image: url("img/068d2eb84a9d1fd247ea7239f4ae18e4.jpg");
 }
 
 .card-image {
@@ -629,6 +673,25 @@ h3 {
   margin-right: 30px;
 }
 
+@media (max-width: 1250px) {
+  .menu-link {
+    font-size: 15px;
+  }
+
+  .header-content {
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+  .title-camp {
+    font-size: 20px;
+  }
+  
+  .title-h1 {
+    font-size: 60px;
+  }
+
+}
+
 @media (max-width: 640px) {
   .menu-links {
     display: none;
@@ -672,14 +735,14 @@ h3 {
   .title {
     width: 100%;
     right: 15px;
-    top: 465px; 
+    top: 120px; 
   }
   .title-h1 {
-    font-size: 50px;
+    font-size: 40px;
   }
 
   .title-camp {
-    font-size: 22px;
+    font-size: 17px;
   }
 
   .services {
@@ -697,6 +760,16 @@ h3 {
   .service-cards {
     height: 100%;
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .moreInfoImages {
+    width: 90%;
+    height: 40%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(auto-fill);
+    gap: 10px;
   }
 
   .service-card {
@@ -780,7 +853,7 @@ h3 {
 
   .menu-mobile-link {
     text-decoration: none;
-    font-size: 13px;
+    font-size: 11px;
     color: #fff;
     font-family: serif;
     font-weight: 400;
@@ -914,7 +987,192 @@ h3 {
   }
 
   .title-camp {
-    font-size: 40px;
+    font-size: 25px;
+  }
+
+  .footer {
+    display: none;
+  }
+
+  .menu-mobile {
+    width: 100%;
+    height: 70px;
+    padding: 10px;
+    background-color: #75c1ff;
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(auto-fill);
+    gap: 0;
+    box-sizing: border-box;
+  }
+
+  .menu-mobile {
+    width: 100%;
+    height: 70px;
+    padding: 10px;
+    background-color: #75c1ff;
+    position: fixed;
+    bottom: 0;
+    z-index: 10;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(auto-fill);
+    gap: 0;
+    box-sizing: border-box;
+  }
+
+  .menu-icon {
+    width: 100%;
+    height: 100%;
+    display: block;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    /* border: 3px solid #EB7F00;
+    border-right: 0; */
+    box-sizing: border-box;
+  }
+
+  .menu-mobile-link {
+    text-decoration: none;
+    font-size: 13px;
+    color: #fff;
+    font-family: serif;
+    font-weight: 400;
+    font-style: bold;
+    text-transform: uppercase;
+    margin-top: 5px;
+  }
+
+  .menu-icon-main {
+    width: 100%;
+    height: 70%;
+    background-image: url("img/sidebar-top-svgrepo-com.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .menu-icon-parents {
+    width: 100%;
+    height: 70%;
+    background-image: url("img/parents-child-svgrepo-com.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .menu-icon-camp {
+    width: 100%;
+    height: 70%;
+    background-image: url("img/camp-tent-svgrepo-com.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .menu-icon-price {
+    width: 100%;
+    height: 70%;
+    background-image: url("img/price-tag-2-svgrepo-com.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+  .menu-icon-contacts {
+    width: 100%;
+    height: 70%;
+    background-image: url("img/contacts-svgrepo-com.svg");
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+}
+
+@media (min-width: 641px) and (max-width: 900px) {
+  .menu-links {
+    display: none;
+  }
+
+  .menu-burger {
+    display: none;
+  }
+
+  .services {
+    height: 100%;
+  }
+
+  .service-cards {
+    height: 100%;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .service-card {
+    height: 100%;
+  }
+
+  .event-button-box {
+    text-align: center;
+  }
+
+  .event-button {
+    position: relative;
+    margin-top: 40px;
+    width: 200px;
+  }
+
+  .card-button-box {
+    text-align: center;
+  }
+
+  .card-button {
+    position: relative;
+    margin-top: 40px;
+    width: 200px;
+  }
+
+  .contacts {
+    display: flex;
+  }
+
+  .offer {
+    height: 300px;
+  }
+
+  .reward-main {
+    width: 30%;
+    height:70px;
+    position: absolute;
+    bottom: 80px;
+    left: 60px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(auto-fill);
+    gap: 10px;
+  }
+
+  .reward-card-header {
+    font-family: serif;
+    font-size: 11px;
+    font-weight: 300;
+  }
+
+  .title {
+    width: 100%;
+    right: 15px;
+    top: 50px; 
+  }
+  .title-h1 {
+    font-size: 60px;
+  }
+
+  .title-camp {
+    font-size: 25px;
   }
 
   .footer {
