@@ -225,7 +225,8 @@ h3 {
   width: 100%;
   height: 700px;
   /* background-image: url("img/068d2eb84a9d1fd247ea7239f4ae18e4.jpg"); */
-  background-image: url("img/offer3.jpg");
+  /* background-image: url("img/offer3.jpg"); */
+  background-image: url("img/offer8.png");
   background-size: cover;
   background-position: center; 
   position: relative;
@@ -235,7 +236,7 @@ h3 {
   width: 60%;
   height: 100%;
   position: absolute;
-  top: 20px;
+  top: 100px;
   right: 0;
   /* background-image: url("img/logo.png");
   background-size: cover;
@@ -308,7 +309,20 @@ h3 {
   text-align: center;
 }
 
-.wave-main {
+.wave-top {
+  position: absolute;
+  background-image: url("img/Волна3.png");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 150px;
+  top: -5px;
+  left: 0;
+  right: 0;
+}
+
+.wave-bottom {
   position: absolute;
   background-image: url("img/волна2.png");
   background-position: center;
@@ -856,13 +870,14 @@ h3 {
 
   .offer {
     height: 600px;
-    background-image: url("img/offer3.jpg");
+    /* background-image: url("img/offer3.jpg"); */
+    background-position: left 0 center;
   }
 
   .title {
     width: 100%;
     right: 5px;
-    top: 90px; 
+    top: 180px; 
   }
 
   .titleImage {
