@@ -154,6 +154,7 @@ h3 {
 
 .header {
   width: 100%;
+  position: relative;
 }
 
 .header-content {
@@ -198,6 +199,31 @@ h3 {
 
 .menu-link:hover {
   color: #ff3333;
+}
+
+.buy-btn {
+  background: none;
+  border: none;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 28px;
+  width: 220px;
+  height: 100px;
+  background-color: #ff3333;
+  border-radius: 50%;
+  position: absolute;
+  bottom: 10px;
+  left: 44%;
+  border: 1px solid #75c1ff;
+}
+
+.buy-link {
+  text-decoration: none;
+  color: #f4f7f6;
+}
+
+.buy-btn:hover {
+  background-color: #ff3333;
+  color: #f4f7f6;
 }
 
 .main-button {
@@ -1346,6 +1372,10 @@ h3 {
     /* display: none; */
     width: 120px;
     height: 70px;
+  }
+
+  .buy-btn {
+    left: 23%;
   }
 
   .offer {
