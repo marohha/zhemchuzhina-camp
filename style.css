@@ -1307,6 +1307,11 @@ h3 {
     width: 320px;
   }
 
+  .popup-button {
+    width: 100px;
+    height: 40px;
+  }
+
   .menu-links {
     display: none;
   }
