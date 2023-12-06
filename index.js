@@ -57,3 +57,58 @@ function closePushedForm() {
     var popup = document.querySelector('.pushedFormPopup');
     popup.style.display = 'none';
 }
+
+
+
+
+const TOKEN = '6824368195:AAFjZ9VT4yI8EXoZ_wBNIu4OgEOxMm-_ACw';
+const CHATID = '-1001805914566';
+const URLAPI = `https://api.telegram.org/bot${ TOKEN }/sendMessage`;
+
+document.getElementById('form').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    let message = `<b>Заявка с сайта Жемчужина</b>\n`;
+    message += `<b>Имя отправителя: </b> ${ this.name.value }\n`;
+    message += `<b>Имя ребенка: </b> ${ this.child_name.value }\n`;
+    message += `<b>Из города: </b> ${ this.city.value }\n`;
+    message += `<b>Телефон: </b> ${ this.phone.value }\n`;
+    message += `<b>Желаемая смена: </b> ${ this.camp_season.value }\n`;
+    message += `<b>Комментарий: </b> ${ this.comment.value }\n`;
+
+    axios.post(URLAPI, {
+        chat_id: CHATID,
+        parse_mode: 'html',
+        text: message
+    })
+    .then((res) => {
+        this.name.value = '';
+        this.child_name.value = '';
+        this.city.value = '';
+        this.phone.value = '';
+        this.camp_season.value = '';
+        this.comment.value = '';
+        openPushedForm();
+    })
+})
+
+document.getElementById('callback').addEventListener('submit', function(e) {
+    e.preventDefault();
+
+    let message = `<b>Заявка на обратный звонок</b>\n`;
+    message += `<b>Имя отправителя: </b> ${ this.name.value }\n`;
+    message += `<b>Телефон: </b> ${ this.phone.value }\n`;
+    message += `<b>Вопрос: </b> ${ this.comment.value }\n`;
+
+    axios.post(URLAPI, {
+        chat_id: CHATID,
+        parse_mode: 'html',
+        text: message
+    })
+    .then((res) => {
+        this.name.value = '';
+        this.phone.value = '';
+        this.comment.value = '';
+        closePopup();
+    })
+})

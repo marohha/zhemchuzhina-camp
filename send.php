@@ -1,7 +1,7 @@
-<?php
+// <?php
 
 //В переменную $token нужно вставить токен, который нам прислал @botFather
-$token = "6824368195:AAFjZ9VT4yI8EXoZ_wBNIu4OgEOxMm-_ACw";
+//$token = "6824368195:AAFjZ9VT4yI8EXoZ_wBNIu4OgEOxMm-_ACw";
 
 //Сюда вставляем chat_id
 $chat_id = "771357880";
@@ -36,4 +36,4 @@ if ($_POST['act'] == 'order') {
     }
 }
 
-?>
+?> 

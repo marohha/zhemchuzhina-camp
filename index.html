@@ -12,15 +12,15 @@
     
     
 
-    <form class="popup">
+    <form class="popup" id="callback">
         <h3 class="popup-header">Заказать обратный звонок</h3>
         <div class="popup-content">
             <label class="select-header" for="tel-form">Укажите Ваше имя:</label>
-            <input class="form-tel" type="text" id="tel-form" placeholder="Иван Петров">
+            <input class="form-tel" type="text" name='name' id="tel-form" placeholder="Иван Петров">
             <label class="select-header" for="tel-form">Укажите Ваш номер телефона:</label>
-            <input class="form-tel" type="tel" id="tel-form" placeholder="+7 (000) 000 00 00">
+            <input class="form-tel" type="tel" id="tel-form" name='phone' placeholder="+7 (000) 000 00 00">
             <label class="select-header" for="select">Ранее бывали в нашем лагере?</label>
-            <div class="radio-buttons">
+            <!-- <div class="radio-buttons">
                 <label class="radio-answer">
                     <input class="radio" type="radio" name="yes/no" checked>
                     <span class="radio-text">Да</span>
@@ -29,9 +29,9 @@
                     <input class="radio" type="radio" name="yes/no">
                     <span class="radio-text">Нет</span>
                 </label>
-            </div>
+            </div> -->
             <label class="select-header" for="text-form">Ваш вопрос:</label>
-            <input class="form-text" type="text" id="text-form" placeholder="Уточнить информацию по путевке">  
+            <input class="form-text" type="text" id="text-form" name='comment' placeholder="Уточнить информацию по путевке">  
         </div>
         <div class="popup-button-box">
             <button class="popup-button popup-button-push" type="submit"></button>
@@ -347,7 +347,7 @@
        </div>
        <div class="main-form-wave"></div>
        <div class="form">
-            <form class="main-form" method="post" action="/send.php">
+            <form class="main-form" id="form">
                 <h3 class="popup-header">Отправить заявку</h3>
                 <div class="main-form-content">
                     <div>
@@ -356,11 +356,11 @@
                     </div>
                     <div>
                         <label class="select-header" for="tel-form">Укажите имя ребенка:</label>
-                        <input class="form-tel" type="text" id="tel-form" placeholder="Федор Петров">
+                        <input class="form-tel" type="text" id="tel-form" name="child_name" placeholder="Федор Петров">
                     </div>
                     <div>
                         <label class="select-header" for="tel-form">Из какого Вы города:</label>
-                        <input class="form-tel" type="text" id="tel-form" placeholder="Евпатория">
+                        <input class="form-tel" type="text" id="tel-form" name="city" placeholder="Евпатория">
                     </div>
                     <div>
                         <label class="select-header" for="tel-form">Укажите Ваш номер телефона:</label>
@@ -368,7 +368,7 @@
                     </div>
                     <div>
                         <label class="select-header" for="tel-form">Желаемая смена:</label>
-                        <input class="form-tel" type="tel" id="tel-form" placeholder="Первая">
+                        <input class="form-tel" type="tel" id="tel-form" name="camp_season" placeholder="Первая">
                     </div>
                     <div class="radio-buttons">
                         <div>
@@ -387,15 +387,14 @@
                     </div>
                     <div class="more-info-form">
                         <label class="select-header" for="text-form">Ваш вопрос:</label>
-                        <input class="form-text form-text-main" type="text" id="text-form" placeholder="Уточнить информацию по путевке">
+                        <input class="form-text form-text-main" type="text" id="text-form" name="comment" placeholder="Уточнить информацию по путевке">
                     </div> 
                 </div>
                 <div>
                     <input type="checkbox" id="checkbox" class="check-personal"><label class="check-personal-text" for="checkbox">Даю согласие на обработку персональных данных</label>
                 </div>
                 <div class="popup-button-box">
-                    <button class="form-button-push" type="button" name="act" value="order" onclick="openPushedForm()"></button>
-                    <!-- <input type="hidden" name="act" value="order"> -->
+                    <button class="form-button-push" type="submit"></button>
                 </div>
                 
             </form>
@@ -464,6 +463,7 @@
             </div>
         </div>
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
