@@ -1,21 +1,21 @@
-const offerBg = document.querySelector('.offer');
-const images = ['offer5.jpg', 'offer8.png', 'offer9.jpg', 'offer10.png']
+// const offerBg = document.querySelector('.offer');
+// const images = ['offer5.jpg', 'offer8.png', 'offer9.jpg', 'offer10.png']
 
-let i = 0;
-setTimeout(() => {
-    if (i === 5){
-        i = 0;
-    }
-    offerBg.style.background = `url('img/${images[i]}')`;
-    i++;
-}, 5000)
-setTimeout(() => {
-    if (i === 5){
-        i = 0;
-    }
-    offerBg.style.background = `url('img/${images[2]}')`;
-    i++;
-}, 12000)
+// let i = 0;
+// setTimeout(() => {
+//     if (i === 5){
+//         i = 0;
+//     }
+//     offerBg.style.background = `url('img/${images[i]}')`;
+//     i++;
+// }, 5000)
+// setTimeout(() => {
+//     if (i === 5){
+//         i = 0;
+//     }
+//     offerBg.style.background = `url('img/${images[2]}')`;
+//     i++;
+// }, 12000)
 
 function openPopup() {
     var popup = document.querySelector('.popup');
